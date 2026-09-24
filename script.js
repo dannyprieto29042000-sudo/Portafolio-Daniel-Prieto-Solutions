@@ -85,18 +85,36 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
             
             try {
-                // Webhook URL provided by user
+                // Webhook URL de GoHighLevel
                 const webhookUrl = 'https://services.leadconnectorhq.com/hooks/BFlduntAgxuswIL9HZhj/webhook-trigger/20dd9d18-9000-421a-9a16-10e5c411d759';
                 
-                const response = await fetch(webhookUrl, {
+                // 1. Enviar a GoHighLevel
+                const responseGHL = await fetch(webhookUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
                     },
                     body: new URLSearchParams(formData).toString()
                 });
+
+                // 2. Enviar correo electrónico directamente (vía FormSubmit)
+                const emailUrl = 'https://formsubmit.co/ajax/Dannyprieto29042000@gmail.com';
+                await fetch(emailUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        Nombre: data.nombre,
+                        Telefono: data.telefono,
+                        Correo: data.correo,
+                        Requerimiento: data.requerimiento,
+                        Servicio: data.servicio
+                    })
+                });
                 
-                if (response.ok || response.type === 'opaque') {
+                if (responseGHL.ok || responseGHL.type === 'opaque') {
                     messageDiv.textContent = '¡Gracias! Hemos recibido tu solicitud y te contactaremos pronto.';
                     messageDiv.className = 'form-message success';
                     form.reset();

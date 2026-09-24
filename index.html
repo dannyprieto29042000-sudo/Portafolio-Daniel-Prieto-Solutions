@@ -1,388 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Prieto | Estratega y Gestor de Productividad</title>
-    <meta name="description"
-        content="Soluciones ágiles en Gestión, Marketing y Automatización. Elimina cuellos de botella operativos y construye canales de venta claros.">
+    <title>Daniel Te Importa | Importador Directo</title>
+    <meta name="description" content="Ayudo a emprendedores a reducir sus costos y destrozar los precios de su competencia mediante importaciones directas desde China.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Phosphor Icons for minimalist linear icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-
 <body>
-    <!-- Floating Logo outside stacking context -->
-    <div class="floating-logo-wrapper">
-        <div class="container nav-container">
-            <a href="#" class="logo floating-logo-link">
-                <img src="logo.png.png" alt="Daniel Prieto Logo" class="logo-img floating-img">
-            </a>
-        </div>
-    </div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Header -->
+    <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo" style="visibility: hidden;">
-                <img src="logo.png.png" alt="Daniel Prieto Logo" class="logo-img">
+            <a href="#" class="logo">
+                <img src="logo.png.png" alt="Daniel Te Importa" class="logo-img" style="height: 80px; mix-blend-mode: multiply;">
             </a>
             <div class="nav-links">
-                <a href="#problema">El Problema</a>
-                <a href="#por-que-yo">Por qué yo</a>
+                <a href="#beneficios">Beneficios</a>
                 <a href="#servicios">Servicios</a>
-                <a href="#proceso">Proceso</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contacto" class="btn btn-nav">Agendar Café</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto" class="btn btn-primary">Cotiza tu Importación</a>
             </div>
-            <button class="mobile-toggle" aria-label="Abrir menú">
+            <button class="mobile-toggle" aria-label="Menu">
                 <i class="ph ph-list"></i>
             </button>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero" id="inicio">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hola, soy <span class="highlight">Daniel Prieto</span>.</h1>
-                <p class="hero-subtitle">Tu socio estratégico para el crecimiento: Soluciones ágiles en Gestión,
-                    Marketing y Automatización.</p>
-                <p class="hero-text">Mientras otros se quedan en la teoría, yo otorgo soluciones a través de la acción.
-                    Uso herramientas tecnológicas y mi visión analítica para ejecutar estrategias factibles que lleven a
-                    tu negocio al siguiente nivel. La organización impecable y la eficacia son el mapa que te mostrará
-                    el rumbo al éxito.</p>
-                <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-primary">¿Hablamos de tu idea?</a>
-                    <a href="#servicios" class="btn btn-secondary">Conoce mis servicios</a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image-wrapper">
-            <!-- La foto de perfil va aquí, ocupando ancho completo -->
-            <img src="profile.png.png" alt="Daniel Prieto - Fotografía" class="hero-profile-img">
-        </div>
     </header>
 
-    <!-- Conexión Empática -->
-    <section class="section empathy" id="problema">
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>¿Crees que importar es muy caro? Yo tengo la solución.</h1>
+                <p class="hero-subtitle">Hago la gestión y planificación para que empieces a importar de China sin complicaciones. Tú dime qué quieres traer, yo me encargo del resto.</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Ver Paquetes de Importación</a>
+                    <a href="#contacto" class="btn btn-outline">Hablar con Daniel</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="contenedor.jpeg" alt="Contenedores de carga" style="border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Propuesta de Valor / Promesa -->
+    <section class="section" style="background: var(--bg-black); color: var(--text-light);">
+        <div class="container text-center" style="max-width: 900px;">
+            <h2 style="font-size: 2.5rem;">Multiplica tus márgenes importando desde China a precios de fabricante, sin comprar contenedores enteros.</h2>
+            <p style="color: #ccc; font-size: 1.1rem; margin-top: 2rem;">La Pesadilla: Estás asfixiando tus ganancias comprando a proveedores locales con márgenes mínimos. Tienes miedo de que te estafen en China o de que la aduana retenga tu capital.</p>
+            <p style="color: var(--text-light); font-size: 1.2rem; font-weight: 600; margin-top: 1rem;">El Cielo: Tienes una línea directa y segura con fábricas asiáticas. Importas exactamente el volumen que necesitas para escalar y reduces drásticamente tu costo por unidad.</p>
+        </div>
+    </section>
+
+    <!-- Beneficios (Pain Points) -->
+    <section class="benefits" id="beneficios">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">¿Sientes que el crecimiento de tu negocio avanza en cámara lenta?</h2>
+            <h2 class="text-center">Olvídate de las barreras para importar</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="ph ph-shield-check benefit-icon"></i>
+                    <h3>Importación Segura</h3>
+                    <p>Delega la compra y el papeleo de China en mis manos sin miedo a estafas ni bloqueos en aduana.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="ph ph-calculator benefit-icon"></i>
+                    <h3>Costos Transparentes</h3>
+                    <p>Corta a los intermediarios y reduce el costo de tu mercancía hoy mismo. Conviértete en el referente de precios de tu nicho.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="ph ph-clock benefit-icon"></i>
+                    <h3>Ahorro de Tiempo</h3>
+                    <p>No pierdas semanas intentando descifrar cómo negociar en Asia. Yo lo hago por ti, o te enseño el paso a paso en 3 días.</p>
+                </div>
             </div>
 
-            <div class="empathy-grid">
-                <div class="empathy-card">
-                    <i class="ph ph-warning-circle card-icon"></i>
-                    <h3>El Problema</h3>
-                    <p>Sé lo frustrante que es tener un excelente producto o servicio en mente, querer lanzarlo al
-                        mercado, y darte cuenta de que conseguir las primeras visualizaciones o ventas te toma meses de
-                        ensayo y error, o te exige una inversión que parece no tener retorno.</p>
-                </div>
-
-                <div class="empathy-card">
-                    <i class="ph ph-trend-down card-icon"></i>
-                    <h3>La Barrera</h3>
-                    <p>El marketing digital y la gestión operativa no deberían ser un dolor de cabeza, pero para muchos
-                        dueños de negocio se han convertido en una barrera en lugar de un puente. Terminas atrapado
-                        respondiendo correos, intentando entender el algoritmo, o improvisando presupuestos. Al final,
-                        el miedo a equivocarte o la falta de horas no dejan crecer tu marca.</p>
-                </div>
-
-                <div class="empathy-card highlight-card">
-                    <i class="ph ph-drop card-icon"></i>
-                    <h3>La Solución</h3>
-                    <p>Imagina tu negocio como un sistema de tuberías. Si hay un atasco, el crecimiento deja de fluir.
-                        Como Gestor de Productividad y experto en marketing, soy la herramienta para destapar la
-                        obstrucción. Elimino los cuellos de botella operativos y construyo canales de venta claros para
-                        que tus ingresos y tu tiempo libre vuelvan a fluir de manera constante.</p>
+            <!-- Ejemplos de Nichos -->
+            <div style="margin-top: 4rem;">
+                <h3 class="text-center">Te traemos cualquier producto que quieras, solo envías la imagen y te cotizamos sin compromiso</h3>
+                <div class="product-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <img src="JOYERÍA.jpg" alt="Joyería" class="product-img" title="Joyería">
+                    <img src="tecnologia.jpeg" alt="Tecnología" class="product-img" title="Tecnología">
+                    <img src="Medias (2).jpeg" alt="Ropa y Textiles" class="product-img" title="Ropa y Textiles">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Audífonos" class="product-img" title="Audífonos">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Ropa Deportiva" class="product-img" title="Ropa Deportiva">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Storytelling -->
-    <section class="section storytelling" id="por-que-yo">
-        <div class="container storytelling-container">
-            <div class="storytelling-content">
-                <h2 class="section-title">De humano a humano</h2>
-                <p class="lead-text">Mi valor no está en escribir líneas de código o redactar textos genéricos; mi
-                    trabajo es materializar tu visión.</p>
-
-                <p>Asumir el rol de gestor me permite ir más allá de ser un simple asistente. Me convierto en tu socio
-                    estratégico. Entiendo que detrás de cada marca local o proyecto emprendedor hay horas de esfuerzo.
-                </p>
-
-                <p>Por eso, garantizo entregas rápidas, a precios accesibles, y siempre respaldadas por un análisis real
-                    del mercado que transforma tus debilidades actuales en tu mayor ventaja competitiva.</p>
-
-                <blockquote class="mission-statement">
-                    "Mi objetivo es simple: quiero que dejes de preocuparte por el «cómo se hace» y te enfoques por
-                    completo en el «qué vamos a lograr». Yo me encargo de que las cosas sucedan."
-                </blockquote>
-            </div>
-            <div class="storytelling-visual">
-                <div class="abstract-shape"></div>
-                <div class="glass-panel">
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Enfoque en Resultados</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Servicios -->
-    <section class="section services" id="servicios">
+    <!-- Pricing / Servicios -->
+    <section class="pricing" id="servicios">
         <div class="container">
-            <div class="section-header text-center">
-                <span class="badge">Soluciones orientadas al resultado</span>
-                <h2 class="section-title">Paquetes de Transformación</h2>
-            </div>
-
+            <h2 class="text-center">Elige cómo quieres empezar tu importación</h2>
+            
             <div class="pricing-grid">
-                <!-- Tarjeta 1 -->
+                <!-- Pricing 1 -->
                 <div class="pricing-card">
-                    <div class="card-header">
-                        <h3 class="card-title">Kit de Impulso Operativo</h3>
-                        <p class="card-subtitle">Administración Digital + Automatización Base (GoHighLevel)</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Para quienes necesitan ordenar la casa, recuperar su tiempo y automatizar las tareas
-                            repetitivas que frenan su día a día.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#contacto" class="btn btn-outline btn-full">Me interesa</a>
-                    </div>
+                    <h3>Hazlo tú mismo</h3>
+                    <div class="price">$60</div>
+                    <ul class="pricing-features">
+                        <li><i class="ph ph-check"></i> 3 clases explicativas paso a paso.</li>
+                        <li><i class="ph ph-check"></i> Selección de proveedores confiables.</li>
+                        <li><i class="ph ph-check"></i> Uso de plataformas chinas.</li>
+                    </ul>
+                    <a href="https://meet.google.com/" target="_blank" class="btn btn-white" style="width:100%">Agendar Asesoría</a>
                 </div>
 
-                <!-- Tarjeta 2 -->
+                <!-- Pricing 2 -->
                 <div class="pricing-card">
-                    <div class="card-header">
-                        <h3 class="card-title">Estrategia de Crecimiento Acelerado</h3>
-                        <p class="card-subtitle">Administración Digital + Marketing Digital</p>
-                    </div>
-                    <div class="card-body">
-                        <p>El equilibrio perfecto. Estructuramos tus operaciones internas mientras lanzamos estrategias
-                            probadas para atraer a los clientes correctos.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#contacto" class="btn btn-outline btn-full">Me interesa</a>
-                    </div>
+                    <h3>Yo lo compro por ti</h3>
+                    <div class="price">% de la factura</div>
+                    <ul class="pricing-features">
+                        <li><i class="ph ph-check"></i> Búsqueda del producto ideal.</li>
+                        <li><i class="ph ph-check"></i> Negociación directa con fábricas.</li>
+                        <li><i class="ph ph-check"></i> Compra segura.</li>
+                        <li><i class="ph ph-info"></i> *Tú te encargas del casillero y flete.</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-white" style="width:100%">Solicitar Cotización</a>
                 </div>
 
-                <!-- Tarjeta 3 (Destacada) -->
+                <!-- Pricing 3 (Destacado) -->
                 <div class="pricing-card featured">
-                    <div class="featured-badge">Más Elegido</div>
-                    <div class="card-header">
-                        <h3 class="card-title">Transformación Digital Integral</h3>
-                        <p class="card-subtitle">Full Services (Administración + Marketing + Gestión + GoHighLevel
-                            Avanzado)</p>
-                    </div>
-                    <div class="card-body">
-                        <p>Delegación total. Desde el diseño de proyectos económicos hasta la automatización total de
-                            tus ventas y captación.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#contacto" class="btn btn-primary btn-full">Empezar Transformación</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pilares -->
-            <div class="pillars-section">
-                <h3 class="text-center mb-5">Los Pilares de mi Trabajo</h3>
-                <div class="pillars-grid">
-                    <div class="pillar-item">
-                        <div class="pillar-icon">
-                            <i class="ph ph-calendar-check"></i>
-                        </div>
-                        <h4>Administración Digital</h4>
-                        <span class="pillar-tag">Delegación y Eficiencia</span>
-                        <p>Gestión integral de tu agenda, correo, recordatorios y soporte administrativo personalizado.
-                            Te devuelvo el control de tu tiempo.</p>
-                    </div>
-
-                    <div class="pillar-item">
-                        <div class="pillar-icon">
-                            <i class="ph ph-megaphone"></i>
-                        </div>
-                        <h4>Mercadeo Digital</h4>
-                        <span class="pillar-tag">Posicionamiento y Crecimiento</span>
-                        <p>Diseño de posts, guiones persuasivos, videos profesionales y estudios de mercado. Hacemos que
-                            tu marca sea imposible de ignorar.</p>
-                    </div>
-
-                    <div class="pillar-item">
-                        <div class="pillar-icon">
-                            <i class="ph ph-tree-structure"></i>
-                        </div>
-                        <h4>Gestión Sostenible</h4>
-                        <span class="pillar-tag">Viabilidad y Rentabilidad</span>
-                        <p>Diseño de presupuestos y proyectos económicos. Aplico análisis riguroso para asegurar que
-                            cada estrategia sea aplicable y rentable a largo plazo.</p>
-                    </div>
-
-                    <div class="pillar-item">
-                        <div class="pillar-icon">
-                            <i class="ph ph-rocket"></i>
-                        </div>
-                        <h4>Automatización de Procesos</h4>
-                        <span class="pillar-tag">Digitalización y Escala</span>
-                        <p>Diseño de páginas web de alto impacto y automatización de procesos clave con GoHighLevel. Tu
-                            negocio trabajando en piloto automático.</p>
-                    </div>
+                    <div class="featured-badge">Más Popular</div>
+                    <h3>Compro y Traigo</h3>
+                    <div class="price">% de compra + Flete</div>
+                    <ul class="pricing-features">
+                        <li><i class="ph ph-check"></i> Gestión total (All-Inclusive).</li>
+                        <li><i class="ph ph-check"></i> Compra, negociación y logística.</li>
+                        <li><i class="ph ph-check"></i> Recibes la mercancía en tus manos.</li>
+                        <li><i class="ph ph-info"></i> *Se te pasa el monto del flete posteriormente para cancelar fácilmente.</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-white" style="width:100%">Delegar mi Importación</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- El Proceso -->
-    <section class="section process" id="proceso">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="badge">Cero Fricción</span>
-                <h2 class="section-title">Pasar de la idea a la ejecución nunca fue tan fácil</h2>
-                <p>Todo fluye en 3 pasos:</p>
+    <!-- Autoridad / Quién soy -->
+    <section class="section" id="sobre-mi" style="background-color: var(--bg-white);">
+        <div class="container hero-grid" style="align-items: center;">
+            <div class="hero-visual">
+                <img src="profile.png.png" alt="Daniel Prieto" style="width: 100%; max-width: 500px; margin: 0 auto; border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle); filter: grayscale(0%) !important;">
             </div>
-
-            <div class="steps-container">
-                <div class="step-line"></div>
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Conectamos</h3>
-                        <p>Tenemos una charla honesta sobre tu visión, lo que te frustra actualmente y hacia dónde
-                            quieres llegar.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Co-creamos</h3>
-                        <p>Diseño la estrategia a tu medida y trabajamos con iteración rápida. Nada de procesos lentos;
-                            vemos resultados y ajustamos sobre la marcha.</p>
-                    </div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Despegamos</h3>
-                        <p>Tu producto o servicio cobra vida en el mercado, organizado, automatizado y listo para
-                            escalar.</p>
-                    </div>
-                </div>
+            <div class="hero-content">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">¿Quién hace la gestión?</h2>
+                <h3 style="font-size: 1.5rem; color: var(--text-gray); margin-bottom: 1.5rem;">Soy Daniel Prieto. Tu contacto directo en el mundo de las importaciones.</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">Detrás de cada contenedor, cada caja y cada negociación, estoy yo asegurándome de que tu inversión esté protegida y rinda al máximo.</p>
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">No hablas con un bot, ni con una agencia sin rostro. Yo negocio personalmente con los proveedores, calculo los costos reales y te hablo con total transparencia para que importes con la misma seguridad que los gigantes de la industria.</p>
+                <a href="#contacto" class="btn btn-primary">Hablar directamente con Daniel</a>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section faq" id="faq">
+    <!-- Social Proof & FAQ -->
+    <section class="section social-proof" id="testimonios">
         <div class="container">
-            <div class="section-header text-center">
-                <h2 class="section-title">FAQ Estratégico</h2>
+            <div class="testimonials">
+                <div class="testimonial-text">
+                    El primer paso es perder el miedo a creer que importar es costoso, si tienes la idea hazla realidad
+                </div>
+                <p class="text-center" style="margin-top: 1rem; font-weight: 600;">- Daniel Prieto 2026</p>
             </div>
 
             <div class="accordion">
+                <h3 class="text-center" style="margin-bottom: 2rem;">Preguntas Frecuentes</h3>
+                
                 <div class="accordion-item active">
                     <div class="accordion-header">
-                        <h3>¿Por qué un Gestor de Productividad te ayudaría más que un asistente tradicional?</h3>
+                        ¿Cuánto tarda el envío?
                         <i class="ph ph-caret-down"></i>
                     </div>
                     <div class="accordion-body">
-                        <p>Un asistente espera instrucciones; un gestor propone soluciones. No solo ejecuto tareas, sino
-                            que analizo tu negocio, identifico ineficiencias y aplico estrategias (tanto operativas como
-                            de marketing) para que ahorres tiempo y ganes dinero.</p>
+                        <p>Depende del método seleccionado (aéreo o marítimo). Los envíos aéreos suelen tardar entre 25 a 35 días, mientras que el marítimo puede demorar entre 60 a 90 días en llegar, es más barato el marítimo.</p>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>¿La IA le quita humanidad al proceso?</h3>
+                        ¿Necesito mucho capital?
                         <i class="ph ph-caret-down"></i>
                     </div>
                     <div class="accordion-body">
-                        <p>Todo lo contrario. La Inteligencia Artificial es mi aliada técnica para agilizar procesos de
-                            investigación, bases de datos y estructura. Al delegarle el trabajo pesado a la IA, yo tengo
-                            más tiempo para dedicarle atención humana, estratégica y personalizada a tu negocio. La
-                            empatía y la visión comercial siempre las pongo yo.</p>
+                        <p>No. Es un mito que debes llenar un contenedor de 40 pies. Gracias a la consolidación de carga, podemos traer exactamente el volumen que necesitas para escalar tu negocio, reduciendo el riesgo inicial.</p>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h3>¿Qué pasa si no sé nada de marketing o tecnología?</h3>
+                        ¿Cómo se paga el flete?
                         <i class="ph ph-caret-down"></i>
                     </div>
                     <div class="accordion-body">
-                        <p>Ese es exactamente el punto de trabajar conmigo. No necesitas saberlo. Yo te explico cada
-                            paso en un lenguaje sencillo, sin tecnicismos vacíos. Mi trabajo es traducir ese mundo
-                            digital complejo en resultados claros para ti.</p>
+                        <p>En el plan "Compro y Traigo", una vez que la mercancía está lista y pesada en el casillero en origen, se te pasa el monto exacto del flete para que lo canceles fácilmente antes del envío final.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="section cta-section" id="contacto">
-        <div class="container text-center">
-            <h2 class="cta-title">No tienes que cargar con el peso de tu negocio tú solo.</h2>
-            <p class="cta-text">Si tienes la visión, yo tengo la estructura, el marketing y las herramientas para
-                hacerla realidad.</p>
-            <p class="cta-subtitle">¿Hablamos de tu idea? Agendemos un café virtual.</p>
-
+    <!-- Contacto (Formulario GoHighLevel) -->
+    <section class="section contact-section" id="contacto">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem;">¿Listo para multiplicar tus márgenes?</h2>
+            
             <div class="contact-form-wrapper">
                 <form id="agendar-form" class="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Tu nombre completo">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Número de Teléfono</label>
-                            <input type="tel" id="telefono" name="telefono" class="form-control" required placeholder="+58 414 0000000">
-                        </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required placeholder="Tu nombre completo">
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Número de Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control" required placeholder="+58 414 0000000">
+                    </div>
+                    
                     <div class="form-group">
                         <label for="correo">Correo Electrónico</label>
                         <input type="email" id="correo" name="correo" class="form-control" required placeholder="tu-correo@ejemplo.com">
                     </div>
+                    
                     <div class="form-group">
-                        <label for="requerimiento">Requerimiento Específico</label>
-                        <textarea id="requerimiento" name="requerimiento" class="form-control" rows="4" required placeholder="Cuéntame sobre tu negocio y qué te gustaría lograr..."></textarea>
+                        <label for="requerimiento">¿Qué deseas importar?</label>
+                        <textarea id="requerimiento" name="requerimiento" class="form-control" rows="4" required placeholder="Cuéntame sobre el producto, nicho y volumen que buscas..."></textarea>
                     </div>
+                    
                     <div class="form-group">
-                        <label class="form-label">Selecciona un Paquete / Servicio de Interés</label>
+                        <label>Selecciona un Paquete de Interés</label>
                         <div class="radio-group">
                             <label class="radio-label">
-                                <input type="radio" name="servicio" value="Kit de Impulso Operativo" required>
-                                <span class="radio-custom"></span>
-                                Kit de Impulso Operativo
+                                <input type="radio" name="servicio" value="Hazlo tú mismo (Asesoría)" required>
+                                <span>Hazlo tú mismo (Asesoría)</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="servicio" value="Estrategia de Crecimiento Acelerado">
-                                <span class="radio-custom"></span>
-                                Estrategia de Crecimiento Acelerado
+                                <input type="radio" name="servicio" value="Yo lo compro por ti (Gestión Parcial)">
+                                <span>Yo lo compro por ti (Gestión Parcial)</span>
                             </label>
                             <label class="radio-label">
-                                <input type="radio" name="servicio" value="Transformación Digital Integral">
-                                <span class="radio-custom"></span>
-                                Transformación Digital Integral
+                                <input type="radio" name="servicio" value="Compro y Traigo (All-Inclusive)">
+                                <span>Compro y Traigo (All-Inclusive)</span>
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-large cta-button btn-full" id="submit-btn">
-                        Agendar Reunión Virtual <i class="ph ph-paper-plane-right"></i>
+                    
+                    <button type="submit" class="btn btn-primary" style="width:100%" id="submit-btn">
+                        Solicitar Cotización / Agendar Reunión
                     </button>
                     <div id="form-message" class="form-message"></div>
                 </form>
@@ -392,25 +260,26 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <img src="logo.png.png" alt="Daniel Prieto Logo" class="footer-logo">
-                <p>Diseñado con visión estratégica.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Redes Sociales</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <a href="mailto:dannyprieto29042000@gmail.com">dannyprieto29042000@gmail.com</a>
+                    <a href="tel:+584143426376">0414-3426376</a>
+                    <a href="#" style="margin-top: 1rem;">Políticas de Privacidad</a>
+                </div>
             </div>
-
-            <div class="footer-contact">
-                <h4>Contacto Rápido</h4>
-                <a href="tel:+584143426376"><i class="ph ph-phone"></i> +58 414 3426376</a>
-                <a href="mailto:Dannyprieto29042000@gmail.com"><i class="ph ph-envelope-simple"></i>
-                    Dannyprieto29042000@gmail.com</a>
+            <div class="footer-bottom">
+                &copy; <span id="year"></span> Daniel Prieto | Importador Directo. Todos los derechos reservados.
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="year"></span> Daniel Prieto Solutions. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
