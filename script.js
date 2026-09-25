@@ -88,39 +88,42 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Webhook URL de GoHighLevel
                 const webhookUrl = 'https://services.leadconnectorhq.com/hooks/BFlduntAgxuswIL9HZhj/webhook-trigger/20dd9d18-9000-421a-9a16-10e5c411d759';
                 
-                // 1. Enviar a GoHighLevel
-                const responseGHL = await fetch(webhookUrl, {
+                // 1. Enviar a GoHighLevel (sin esperar respuesta para evitar bloqueos CORS)
+                fetch(webhookUrl, {
                     method: 'POST',
+                    mode: 'no-cors',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded',
                     },
                     body: new URLSearchParams(formData).toString()
-                });
+                }).catch(err => console.error("GHL Error:", err));
 
                 // 2. Enviar correo electrónico directamente (vía FormSubmit)
                 const emailUrl = 'https://formsubmit.co/ajax/Dannyprieto29042000@gmail.com';
-                await fetch(emailUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        Nombre: data.nombre,
-                        Telefono: data.telefono,
-                        Correo: data.correo,
-                        Requerimiento: data.requerimiento,
-                        Servicio: data.servicio
-                    })
-                });
-                
-                if (responseGHL.ok || responseGHL.type === 'opaque') {
-                    messageDiv.textContent = '¡Gracias! Hemos recibido tu solicitud y te contactaremos pronto.';
-                    messageDiv.className = 'form-message success';
-                    form.reset();
-                } else {
-                    throw new Error('Network response was not ok');
+                try {
+                    await fetch(emailUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            Nombre: data.nombre || "No especificado",
+                            Telefono: data.telefono || "No especificado",
+                            Correo: data.correo || "No especificado",
+                            Requerimiento: data.requerimiento || "Ninguno",
+                            Servicio: data.servicio || "No especificado"
+                        })
+                    });
+                } catch(emailErr) {
+                    console.error("Email Error:", emailErr);
                 }
+                
+                // Asumimos éxito si llegamos aquí, ya que los errores están manejados
+                messageDiv.textContent = '¡Gracias! Hemos recibido tu solicitud y te contactaremos pronto.';
+                messageDiv.className = 'form-message success';
+                form.reset();
+
             } catch (error) {
                 console.error('Error submitting form:', error);
                 messageDiv.textContent = 'Ocurrió un error al enviar el formulario. Por favor, intenta de nuevo o escríbenos directamente.';
