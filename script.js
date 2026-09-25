@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }).catch(err => console.error("GHL Error:", err));
 
                 // 2. Enviar correo electrónico directamente (vía FormSubmit)
-                const emailUrl = 'https://formsubmit.co/ajax/Dannyprieto29042000@gmail.com';
+                const emailUrl = 'https://formsubmit.co/ajax/dannyprieto29042000@gmail.com';
                 try {
                     await fetch(emailUrl, {
                         method: 'POST',
